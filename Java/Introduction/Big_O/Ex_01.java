@@ -1,5 +1,5 @@
 package Big_O;
-//test
+
 public class Ex_01 {
 	public static int sum(int n) {
 		if (n <= 0) {
