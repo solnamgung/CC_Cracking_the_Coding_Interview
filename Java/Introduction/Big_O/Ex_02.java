@@ -1,5 +1,7 @@
 package Big_O;
-
+/* runtime complexity : Linear 
+ * the cost of algorithms grows linearly - > O(n) , O(n+n), O(n + m)
+ */
 public class Ex_02 {
 	public static int pairSum(int a, int b) {
 		return a + b;
