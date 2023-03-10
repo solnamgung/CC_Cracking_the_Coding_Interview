@@ -4,7 +4,7 @@ public class ArrayAnswer {
 	
 	 public static void main(String[] args) {
 		 
-		Array arr = new Array(10);
+		Array arr = new Array(5);
 	
 		arr.insert(1);
 		arr.insert(2);
@@ -13,9 +13,9 @@ public class ArrayAnswer {
 		arr.insert(5);
 		
 		arr.insertAt(100, 2);
-	
-		System.out.println(arr.toString());
+		arr.reverse();
 		
+		arr.print();
 		
 	 }
 }
