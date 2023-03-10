@@ -1,22 +1,42 @@
 package Big_O;
 
 /*
- * Big O time is the language and metric we use to describe the efficiency of algorithms. 
- * Not understanding it thoroughly can really hurt you in developing an algorithm. 
- * Not only might you be judged harshly for not really understanding big 0, 
- * but you will also struggle to judge when your algorithm is getting faster or slower.
+ * Big O time means, we could describe the data transfer "algorithm" runtime as
+ * Logarithmic(ex:binary search) is more efficient and scalable than Linear
+ * exponential is on logarithmic time,
+ * constant O(1)  
  */
+
 public class Ex_01 {
-	
-	public static int sum(int n) {
-		if (n <= 0) {
-			return 0;
+ 
+	// code with mosh
+	public void greet(String[] names) {
+		// O(1) space
+		
+		//O(n) space
+		String[] copy = new String[names.length];
+		
+		for(int i = 0; i < names.length; i++) {
+			System.out.println("hi " + names[i]);
 		}
-		return n + sum(n-1);
 	}
 	
-	public static void main(String[] args) {
-		int s = sum(4);
-		System.out.println(s);
-	}
+	
+//	public static int sum(int n) {
+//  		if (n <= 0) {
+//			return 0;
+//		}
+//		return n + sum(n-1);
+//	}
+//	
+//	public static void main(String[] args) {
+//		int s = sum(4);
+//		System.out.println(s);
+//	}
+//	
+	
 }
+
+
+
+
