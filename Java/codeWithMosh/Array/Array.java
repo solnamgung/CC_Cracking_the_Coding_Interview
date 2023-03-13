@@ -60,7 +60,7 @@ public class Array {
 		int[] newItems = new int[count];
 		
 		
-		for(int i = 0; i < count; i++) {
+		for(int i = 0; i < count; i++) {  // ex) count = 6
 			newItems[i] = items[count - i -1];
 		}
 		items = newItems;
