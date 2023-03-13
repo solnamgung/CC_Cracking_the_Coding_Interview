@@ -1,4 +1,4 @@
-package com.nsc.mosh.array;
+package codeMosh.array;
 
 import java.sql.SQLOutput;
 import java.util.Arrays;

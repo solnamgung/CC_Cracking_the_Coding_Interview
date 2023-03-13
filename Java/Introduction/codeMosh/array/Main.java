@@ -1,6 +1,7 @@
-package com.nsc.mosh.array;
+package codeMosh.array;
 
-public class ArrayAnswer {
+
+public class Main {
 	
 	 public static void main(String[] args) {
 		 
