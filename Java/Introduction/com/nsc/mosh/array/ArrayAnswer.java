@@ -1,4 +1,4 @@
-package codeWithMosh;
+package com.nsc.mosh.array;
 
 public class ArrayAnswer {
 	
@@ -11,11 +11,8 @@ public class ArrayAnswer {
 		arr.insert(3);
 		arr.insert(4);
 		arr.insert(5);
-		
-		arr.insertAt(100, 2);
-		arr.reverse();
-		
+	
+		System.out.println(arr.indexOf(5));
 		arr.print();
-		
 	 }
 }

@@ -1,4 +1,4 @@
-package codeWithMosh;
+package com.nsc.mosh.array;
 
 import java.sql.SQLOutput;
 import java.util.Arrays;
@@ -59,33 +59,49 @@ public class Array {
 	public void reverse() {
 		int[] newItems = new int[count];
 		
-		
-		for(int i = 0; i < count; i++) {  // ex) count = 6
-			newItems[i] = items[count - i -1];
+		for(int i = 0; i < count; i++) {  
+			newItems[i] = items[count - i - 1];
 		}
 		items = newItems;
 	}
 	
+		
+	public int max() {
+		
+		int max = 0;
+		
+		for(int item : items) 
+			if(item > max)
+				max = item;
 	
-//	
-//	public int max() {
-//		
-//		return ;
-//	}
-//	
+		return max;
+	}
+	
 //	public Array intersect(Array other) {
 //		
 //	}
-//	
-//	public void removeAt(int index) {
-//		
-//	}
-//	
-//	public int indexOf(int item) {
-//		
-//		return;
-//	}
-//	
+	
+	public void removeAt(int index) {
+		if(index < 0 || index >= count)
+			throw new IllegalArgumentException();
+		
+		for(int i = index; i < count -1; i++) {
+			items[i] = items[i+1];
+		}
+		count--;
+		
+	}
+	
+	public int indexOf(int item) {
+		 int indexOf = 0;
+		 
+		for(int i = 0; i < count; i++) {
+			if(items[i] == item) 
+				return indexOf = i;
+		}
+		return indexOf;
+	}
+	
 	
 	
 	public void print() {
