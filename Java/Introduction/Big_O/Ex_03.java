@@ -2,8 +2,11 @@ package Big_O;
 
 public class Ex_03 {
 	public static void minAndMax1(int[] array) {
-		int min = Integer.MAX_VALUE;
-		int max = Integer.MIN_VALUE;
+		int min = Integer.MAX_VALUE;  //  2147483647 in decimal form
+		int max = Integer.MIN_VALUE;  // -2147483648
+		System.out.println(min);
+		System.out.println(max);
+		
 		for (int x : array) {
 			if (x < min) min = x;
 			if (x > max) max = x;
@@ -29,3 +32,4 @@ public class Ex_03 {
 		minAndMax2(array);
 	}		
 }
+
