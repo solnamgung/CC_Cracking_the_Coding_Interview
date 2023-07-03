@@ -1,5 +1,12 @@
 package Big_O;
 
+/* Drop the Constants
+ * It's very possible for O(N) code to run faster than O(1) code for specific inputs. 
+ * Big O just describes the rate of increase.
+ * 
+ * Which one is faster?
+ * 
+ * */
 public class Ex_03 {
 	public static void minAndMax1(int[] array) {
 		int min = Integer.MAX_VALUE;
